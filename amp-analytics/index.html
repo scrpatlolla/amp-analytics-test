@@ -1,20 +1,20 @@
 ﻿<!doctype html>
 <html amp lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hello, AMP Analytics</title>
-  <link rel="canonical" href="https://www.google.co.jp/" target="_blank" />
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <script type="application/ld+json">
+    <meta charset="utf-8">
+    <title>Hello, AMP Analytics</title>
+    <link rel="canonical" href="https://www.google.co.jp/" target="_blank" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "headline": "Open-source framework for publishing content",
-      "datePublished": "2015-10-07T12:02:41Z",
-      "image": [
-      "logo.jpg"
-      ]
-  }
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+            "logo.jpg"
+        ]
+    }
 </script>
 
 <script async custom-element="amp-analytics"
@@ -23,130 +23,129 @@ src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 <body>
-
-  <amp-analytics type="googleanalytics" id="analytics1">
+    <amp-analytics type="googleanalytics" id="analytics1">
     <script type="application/json">
-      {
-         "requests" : {
-            "pageviewWithCds" :"${pageview}&a=${UA-49443183-2}"
+    {
+       "requests" : {
+        "pageviewWithCds" :"${pageview}&a=${UA-49443183-2}"
         },
         "vars": {
             "account": "UA-49443183-2"
         },
         "triggers": {
             "trackPageviewWithCustom": {
-               "on": "visible",
-               "request": "pageviewWithCds",
-               "vars": {
-                  "title" : "AMP | Test Page"
-              }
-          },
-          "trackEventRelated1": {
-             "selector": ".ga_related_1",
-             "on": "click",
-             "request": "event",
-             "vars": {
+                "on": "visible",
+                "request": "pageviewWithCds",
+                "vars": {
+                    "title" : "AMP | Test Page"
+                }
+            },
+            "trackEventRelated1": {
+            "selector": ".ga_related_1",
+            "on": "click",
+            "request": "event",
+            "vars": {
                 "eventCategory": "記事下1",
                 "eventAction": "記事下_関連_AMP",
                 "eventLabel": "1st"
+                }
+            },
+            "trackEventRelated2": {
+                "selector": ".ga_related_2",
+                "on": "click",
+                "request": "event",
+                "vars": {
+                    "eventCategory": "記事下2",
+                    "eventAction": "記事下_関連_AMP",
+                    "eventLabel": "2nd"
+                }
+            },
+            "trackEventRelated3": {
+               "selector": ".ga_related_3",
+               "on": "click",
+               "request": "event",
+               "vars": {
+                    "eventCategory": "記事下3",
+                    "eventAction": "記事下_関連_AMP",
+                    "eventLabel": "3rd"
+                }
             }
-        },
-        "trackEventRelated2": {
-           "selector": ".ga_related_2",
-           "on": "click",
-           "request": "event",
-           "vars": {
-              "eventCategory": "記事下2",
-              "eventAction": "記事下_関連_AMP",
-              "eventLabel": "2nd"
-          }
-      },
-      "trackEventRelated3": {
-         "selector": ".ga_related_3",
-         "on": "click",
-         "request": "event",
-         "vars": {
-            "eventCategory": "記事下3",
-            "eventAction": "記事下_関連_AMP",
-            "eventLabel": "3rd"
         }
     }
-}
-}
 </script>
 </amp-analytics>
 
 <amp-analytics type="googleanalytics" id="analytics2">
-  <script type="application/json">
+    <script type="application/json">
     {
-       "requests" : {
-          "pageviewWithCds" :"${pageview}&a=${UA-49443183-3}"
-      },
-      "vars": {
-          "account": "UA-49443183-3"
-      },
-      "triggers": {
-          "trackPageviewWithCustom": {
-             "on": "visible",
-             "request": "pageviewWithCds",
-             "vars": {
-                "title" : "AMP | Test Page"
-            }
+        "requests" : {
+            "pageviewWithCds" :"${pageview}&a=${UA-49443183-3}"
         },
-        "trackEventRelated1": {
-           "selector": ".ga_related_1",
-           "on": "click",
-           "request": "event",
-           "vars": {
-              "eventCategory": "記事下1",
-              "eventAction": "記事下_関連_AMP",
-              "eventLabel": "1st"
-          }
-      },
-      "trackEventRelated2": {
-         "selector": ".ga_related_2",
-         "on": "click",
-         "request": "event",
-         "vars": {
-            "eventCategory": "記事下2",
-            "eventAction": "記事下_関連_AMP",
-            "eventLabel": "2nd"
+        "vars": {
+            "account": "UA-49443183-3"
+        },
+        "triggers": {
+            "trackPageviewWithCustom": {
+                "on": "visible",
+                "request": "pageviewWithCds",
+                "vars": {
+                    "title" : "AMP | Test Page"
+                }
+            },
+            "trackEventRelated1": {
+                "selector": ".ga_related_1",
+                "on": "click",
+                "request": "event",
+                "vars": {
+                    "eventCategory": "記事下1",
+                    "eventAction": "記事下_関連_AMP",
+                    "eventLabel": "1st"
+                }
+            },
+            "trackEventRelated2": {
+                "selector": ".ga_related_2",
+                "on": "click",
+                "request": "event",
+                "vars": {
+                    "eventCategory": "記事下2",
+                    "eventAction": "記事下_関連_AMP",
+                    "eventLabel": "2nd"
+                }
+            },
+            "trackEventRelated3": {
+                "selector": ".ga_related_3",
+                "on": "click",
+                "request": "event",
+                "vars": {
+                    "eventCategory": "記事下3",
+                    "eventAction": "記事下_関連_AMP",
+                    "eventLabel": "3rd"
+                }
+            }
         }
-    },
-    "trackEventRelated3": {
-       "selector": ".ga_related_3",
-       "on": "click",
-       "request": "event",
-       "vars": {
-          "eventCategory": "記事下3",
-          "eventAction": "記事下_関連_AMP",
-          "eventLabel": "3rd"
-      }
-  }
-}
-}
+    }
 </script>
 </amp-analytics>
 
 <section id="related">
-  <div class="heading default related"><h3>記事</h3></div>
-  <ul class="series">
-    <li class="block">
-      <div class="link-box">
-         <div class="ico"><a class="ga_related_1" href="https://www.google.co.jp/" target="_blank">記事１</a></div>
-     </div>
- </li>
- <li class="block">
-    <div class="link-box">
-       <div class="ico"><a class="ga_related_2" href="https://www.google.co.jp/" target="_blank">記事2</a></div>
-   </div>
-</li>
-<li class="block">
-  <div class="link-box">
-     <div class="ico"><a class="ga_related_3" href="https://www.google.co.jp/" target="_blank">記事3</a></div>
- </div>
-</li>
-</ul>
+    <div class="heading default related"><h3>記事</h3></div>
+    <ul class="series">
+        <li class="block">
+            <div class="link-box">
+                <div class="ico"><a class="ga_related_1" href="https://www.google.co.jp/" target="_blank">記事１</a></div>
+            </div>
+        </li>
+        <li class="block">
+            <div class="link-box">
+                <div class="ico"><a class="ga_related_2" href="https://www.google.co.jp/" target="_blank">記事2</a></div>
+            </div>
+        </li>
+        <li class="block">
+            <div class="link-box">
+                <div class="ico"><a class="ga_related_3" href="https://www.google.co.jp/" target="_blank">記事3</a></div>
+            </div>
+        </li>
+    </ul>
 </section>
 </body>
 </html>
